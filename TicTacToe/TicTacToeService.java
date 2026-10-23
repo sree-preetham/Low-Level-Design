@@ -47,10 +47,9 @@ public class TicTacToeService {
             Cell cell = player.move();
             if (!board.makeMove(cell)) {
                 System.out.println(
-                    "Incorrect Move by " +
-                        player.getName() +
-                        " please try again "
-                );
+                        "Incorrect Move by " +
+                                player.getName() +
+                                " please try again ");
                 continue;
             }
             notifyObservers();
@@ -66,7 +65,8 @@ public class TicTacToeService {
     }
 
     private void notifyObservers() {
-        for (BoardObserver observer : observers) observer.update(board);
+        for (BoardObserver observer : observers)
+            observer.update(board);
     }
 }
 
