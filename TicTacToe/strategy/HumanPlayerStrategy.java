@@ -1,7 +1,6 @@
 package strategy;
 
 import entities.Cell;
-
 import java.util.Scanner;
 
 public class HumanPlayerStrategy implements PlayerStrategy {
